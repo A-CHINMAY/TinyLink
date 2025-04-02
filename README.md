@@ -36,7 +36,6 @@ A full-stack web application that allows users to shorten long URLs into compact
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/A-CHINMAY/TinyLink.git
-   cd url-shortener
    ```
 
 2. **Install dependencies:**
