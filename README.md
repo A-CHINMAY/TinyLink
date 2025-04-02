@@ -35,7 +35,7 @@ A full-stack web application that allows users to shorten long URLs into compact
 ### Installation Steps
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/url-shortener.git
+   git clone https://github.com/A-CHINMAY/TinyLink.git
    cd url-shortener
    ```
 
@@ -47,7 +47,7 @@ A full-stack web application that allows users to shorten long URLs into compact
 3. **Create a `.env` file** in the root directory with the following variables:
    ```sh
    PORT=3000
-   MONGODB_URI=mongodb://localhost:27017/url-shortener
+   MONGODB_URI=mongodb://yourdb
    CLIENT_URL=http://localhost:3000
    BASE_URL=http://localhost:3000
    ```
