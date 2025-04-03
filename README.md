@@ -12,8 +12,8 @@ A full-stack web application that allows users to shorten long URLs into compact
 - **dotenv** - Environment variables management
 
 ### Frontend:
-- **HTML5** - Semantic markup
-- **CSS3** - Custom styling
+- **HTML** - Semantic markup
+- **CSS** - Custom styling
 - **JavaScript** - Client-side interactions
 - **Chart.js** - For displaying statistics graphs
 
@@ -86,7 +86,7 @@ npm install nodemon --save-dev
 ### Start Backend Server
 ```sh
 npm start  # or
-nodemon server.js
+nodemon server/server.js
 ```
 
 ## Deployment
