@@ -10,6 +10,50 @@
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-link"></i> URL Shortener</h1>
+            <p>Shorten your long URLs into compact, shareable links</p>
+        </header>
+    
+        <main>
+            <div class="url-form">
+                <form id="shorten-form">
+                    <div class="input-group">
+                        <input type="url" id="url-input" placeholder="Enter a long URL" required>
+                        <button type="submit">Shorten</button>
+                    </div>
+                </form>
+            </div>
+    
+            <div id="result" class="result hidden">
+                <h2>Your Shortened URL</h2>
+                <div class="short-url-container">
+                    <input type="text" id="short-url" readonly>
+                    <button id="copy-btn" title="Copy to clipboard">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+                <div class="links">
+                    <a id="visit-link" href="#" target="_blank">Visit URL</a>
+                    <a id="stats-link" href="#" target="_blank">View Statistics</a>
+                </div>
+            </div>
+    
+            <div id="error" class="error hidden">
+                <p id="error-message"></p>
+            </div>
+    
+            <div class="loading hidden" id="loading">
+                <div class="spinner"></div>
+                <p>Shortening URL...</p>
+            </div>
+        </main>
+    
+        <footer>
+            <p>URL Shortner</p>
+        </footer>
+    </div>
     
     <script src="js/app.js"></script>
 </body>

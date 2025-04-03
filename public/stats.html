@@ -11,6 +11,71 @@
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-chart-line"></i> URL Statistics</h1>
+            <a href="/" class="back-link"><i class="fas fa-arrow-left"></i> Back to Shortener</a>
+        </header>
+    
+        <main>
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading statistics...</p>
+            </div>
+    
+            <div id="stats-container" class="stats-container hidden">
+                <div class="url-info">
+                    <h2>URL Information</h2>
+                    <div class="info-row">
+                        <span class="label">Original URL:</span>
+                        <a id="original-url" href="#" target="_blank" class="value long-text"></a>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Short URL:</span>
+                        <div class="value-with-copy">
+                            <a id="short-url" href="#" target="_blank" class="value"></a>
+                            <button id="copy-btn" title="Copy to clipboard">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Created:</span>
+                        <span id="created-date" class="value"></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Total Clicks:</span>
+                        <span id="total-clicks" class="value highlight"></span>
+                    </div>
+                </div>
+    
+                <div class="charts-container">
+                    <div class="chart-box">
+                        <h3>Daily Clicks (Last 7 Days)</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="daily-chart"></canvas>
+                        </div>
+                    </div>
+    
+                    <div class="chart-box">
+                        <h3>Visitors by Country</h3>
+                        <div id="countries-container" class="countries-container">
+                            <!-- Countries will be added here dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="error" class="error hidden">
+                <p id="error-message"></p>
+                <a href="/" class="btn">Go Home</a>
+            </div>
+        </main>
+    
+        <footer>
+            <p>URL shortner</p>
+        </footer>
+    </div>
 
     <script src="js/stats.js"></script>
 </body>
